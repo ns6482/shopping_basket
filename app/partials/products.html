@@ -1,0 +1,15 @@
+<h3>Products</h3>
+<table class = "table col-md-5">
+	<tr ng-repeat="product in products">
+		<td>{{product.productCode}}</td>
+		<td>{{product.name}}</td>
+		<td>{{product.unitPrice}}</td>
+		<td>
+			<a class ="btn btn-small btn-success" ng-click="basket.addItem(product.productCode, product.unitPrice)" href="#">Buy</a>
+		</td>
+	</tr>
+	Items in Basket: 
+	<span class ="badge">
+	{{basket.items().length}}
+	</span>
+   </table>

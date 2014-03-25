@@ -1,0 +1,32 @@
+<h3>My Basket</h3>
+<table class = "table col-md-5">
+	<thead>
+		<tr>
+			<th>Product</th>
+			<th>Unit</th>
+			<th>Qty</th>
+			<th>Total</th>
+		</tr>
+	
+	</thead>
+	<tbody>
+	<tr ng-repeat="item in basket">
+		<td>{{item.productCode}}</td>
+		<td>{{item.unitPrice}}</td>
+		<td><input ng-model ="item.qty"></input></td>
+		<td>{{item.total()}}</td>
+		<td>
+			<a class= "btn btn-danger btn-sm" ng-click="basketUtility.removeItem(item)">Remove</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class = "badge">
+			Total: {{basketTotal}}
+			</span>
+		<td>
+	</tr>
+	</tbody>
+   </table>
+   <a class ="btn btn-primary" ng-click = "">Checkout</a>
+   </div>

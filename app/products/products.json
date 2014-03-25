@@ -1,0 +1,20 @@
+[{
+			"name": "Trousers",
+			"unitPrice": 5.99,
+			"productCode": "GCL001"
+			},
+			{
+			"name": "Skirt",
+			"unitPrice": 5.5,
+			"productCode": "GCL002"
+			},
+			{
+			"name": "Shirt",
+			"unitPrice": 4.99,
+			"productCode": "GCL003"
+			},
+			{
+			"name": "Blazer",
+			"unitPrice": 12.99,
+			"productCode": "GCL004"
+		}]
